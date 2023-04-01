@@ -6,7 +6,6 @@ import "./assets/tailwind.css";
 import Header from "./components/Header";
 import LandingPage from "./routes/LandingPage";
 import About from "./routes/About";
-import Skills from "./routes/Skills";
 import Projects from "./routes/Projects";
 
 const router = createBrowserRouter([
@@ -17,10 +16,6 @@ const router = createBrowserRouter([
   {
     path: "/About",
     element: <About/>,
-  },
-  {
-    path: "/Skills",
-    element: <Skills/>,
   },
   {
     path: "/Projects",
