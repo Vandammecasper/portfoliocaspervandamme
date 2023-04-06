@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import LandingPage from "./routes/LandingPage";
 import About from "./routes/About";
 import Projects from "./routes/Projects";
+import ContactMe from "./routes/ContactMe";
 
 const router = createBrowserRouter([
   {
@@ -14,12 +15,16 @@ const router = createBrowserRouter([
     element: <LandingPage/>,
   },
   {
-    path: "/About",
+    path: "/about",
     element: <About/>,
   },
   {
-    path: "/Projects",
+    path: "/projects",
     element: <Projects/>,
+  },
+  {
+    path: "/contactme",
+    element: <ContactMe/>,
   }
 ]);
 

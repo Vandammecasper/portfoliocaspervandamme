@@ -1,25 +1,25 @@
 import { Link } from 'react-router-dom';
 import About from '../routes/About';
-import Skills from '../routes/Skills';
 import Projects from '../routes/Projects';
 import LandingPage from '../routes/LandingPage';
 
 export default () => {
   return (
-    <header className="flex items-center justify-between py-12">
-        <Link  className="p-4 rounded-full bg-neutral-100" to={'/'}>
-            <LandingPage/>
+    <header className="w-100% bg-slate-800 h-20 grid grid-rows-2 grid-flow-col">
+        <Link className="row-span-2 w-5/6" to={'/'}>
+          <div className=''>
+            <h1 className='text-slate-200 text-2xl pt-6 pl-20 font-bold'>Casper Van Damme</h1>
+          </div>
         </Link>
-        <Link className="p-4 rounded-full bg-neutral-100" to={'/About'}>
-            <About/>
-        </Link>
-        <Link className="p-4 rounded-full bg-neutral-100" to={'/Skills'}>
-            <Skills/>
-        </Link>
-        <Link className="p-4 rounded-full bg-neutral-100" to={'/Projects'}>
-            <Projects/>
-        </Link>
-      
+        <div className='row-span-2 justify-self-end'>
+          <div className='grid grid-rows-3 grid-flow-col justify-items-end pr-20 gap-16'>
+            <Link className="row-span-3 text-slate-200 text-xl pt-6 font-semibold h-20" to={'/about'}>About</Link>
+            <Link className="row-span-3 text-slate-200 text-xl pt-6 font-semibold h-20" to={'/projects'}>Projects</Link>
+            <div className='border-sky-400 border-2 mt-4 p-2 rounded-xl'>
+              <Link className="row-span-3 text-slate-200 text-xl pt-6" to={'/contactme'}>Contact Me</Link>
+            </div>
+          </div>
+        </div>
     </header>
   );
 };
