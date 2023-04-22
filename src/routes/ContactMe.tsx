@@ -40,7 +40,9 @@ export default () => {
                 <div className="row-span-2">
                     <div className="flex">
                         <h1 className="xl:text-5xl text-3xl font-semibold text-sky-500 pt-3 pl-6 xl:pl-20">Let's work together!</h1>
-                        <img className="block xl:hidden pl-3 h-11 pt-5" src={linkedin} alt="linkedin" />
+                        <a href="https://www.linkedin.com/in/casper-van-damme-18a98520b/">
+                            <img className="block xl:hidden pl-3 h-11 pt-5" src={linkedin} alt="linkedin" />
+                        </a>
                     </div>
                     <h2 className="xl:text-xl font-medium text-slate-700 pt-0 xl:pt-3 pl-6 xl:pl-20">Web/app development & design</h2>
                     <h3 className="text-slate-200 pt-3 pl-6 xl:pl-20 pr-5">I love working on the front-end of websites and apps. besides development I also like working on the design!</h3>
