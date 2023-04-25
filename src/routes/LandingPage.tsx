@@ -28,7 +28,7 @@ export default () => {
                     <h1 className="text-5xl xl:text-7xl font-bold text-sky-500 pl-10 xl:pl-20">Van Damme</h1>
                     <h4 className="text-2xl xl:text-3xl font-medium text-slate-200 pt-3 pl-10 xl:pl-20">Student next web development at Howest</h4>
                 </div>
-                <div className="hidden xl:block xl:row-span-2 xl:w-96  xl:mr-32">
+                <div className="hidden xl:block xl:row-span-2 xl:w-96  xl:mr-20 xl:mt-1">
                     {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
                     <Player
                         autoplay
