@@ -3,6 +3,8 @@ import avatar from "../assets/avatar.png"
 import Header from "../components/Header"
 import BottomNav from "../components/BottomNav";
 import linkedin from "../assets/linkedin.png"
+import { Controls, Player } from "@lottiefiles/react-lottie-player";
+import avatar_loop from "../assets/avatar_loop.json"
 
 export default () => {
 
@@ -34,8 +36,16 @@ export default () => {
         <main className="h-screen overflow-hidden">
             <Header/>
             <div className="w-screen h-100% xl:grid xl:grid-rows-2 xl:grid-flow-col xl:gap-96 items-center pt-6 xl:pt-28 overflow-auto">
-                <div className="block xl:hidden w-80 pl-20">
-                    <img className="rounded-full" src={avatar} alt="Avatar"/>
+                <div className="block xl:hidden w-80 pl-16">
+                    {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
+                    <Player
+                        autoplay
+                        loop
+                        src={avatar_loop}
+                        style={{ height: '240px', width: '240px' }}
+                        >
+                        <Controls visible={false}/>
+                    </Player>
                 </div>
                 <div className="row-span-2">
                     <div className="flex">
@@ -73,7 +83,15 @@ export default () => {
                     </a>
                 </div>
                 <div className="hidden xl:grid row-span-2 w-96 mr-32">
-                    <img className="rounded-full" src={avatar} alt="Avatar"/>
+                    {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
+                    <Player
+                        autoplay
+                        loop
+                        src={avatar_loop}
+                        style={{ height: '375px', width: '375px' }}
+                        >
+                        <Controls visible={false}/>
+                    </Player>
                 </div>
             </div>
             <BottomNav/>
