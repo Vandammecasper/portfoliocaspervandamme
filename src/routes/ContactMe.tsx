@@ -49,14 +49,14 @@ export default () => {
                 </div>
                 <div className="row-span-2 xl:mt-10 xl:w-7/12">
                     <div className="flex">
-                        <h1 className="xl:text-5xl text-3xl font-semibold text-sky-500 pt-3 pl-6 xl:pl-20">Let's work together!</h1>
+                        <h1 className="xl:text-5xl text-3xl 3xl:text-6xl font-semibold text-sky-500 pt-3 pl-6 xl:pl-20">Let's work together!</h1>
                         <a href="https://www.linkedin.com/in/casper-van-damme-18a98520b/">
                             <img className="block xl:hidden pl-3 h-11 pt-5" src={linkedin} alt="linkedin" />
                         </a>
                     </div>
-                    <h2 className="xl:text-xl font-medium text-slate-700 pt-0 xl:pt-3 pl-6 xl:pl-20">Web/app development & design</h2>
-                    <h3 className="text-slate-200 pt-3 pl-6 xl:pl-20 pr-5">I love working on the front-end of websites and apps. besides development I also like working on the design!</h3>
-                    <h3 className="text-slate-200 pt-2 pl-6 xl:pl-20 pr-5">Do you wish to get in touch with me? Feel free to send me an email!</h3>
+                    <h2 className="xl:text-xl font-medium text-slate-700 pt-0 3xl:text-2xl xl:pt-3 pl-6 xl:pl-20">Web/app development & design</h2>
+                    <h3 className="text-slate-200 pt-3 pl-6 xl:pl-20 pr-5 3xl:text-lg">I love working on the front-end of websites and apps. besides development I also like working on the design!</h3>
+                    <h3 className="text-slate-200 pt-2 pl-6 xl:pl-20 pr-5 3xl:text-lg">Do you wish to get in touch with me? Feel free to send me an email!</h3>
                     <a
                         className="xl:ml-20 ml-6 mt-4 w-80 bg-slate-800 py-2 px-4 rounded relative grid justify-items-start"
                         onClick={() => copyToClipboard('casper.van.damme@outlook.com')}
@@ -88,7 +88,7 @@ export default () => {
                         autoplay
                         loop
                         src={avatar_loop}
-                        style={{ height: '375px', width: '375px' }}
+                        style={{ height: '100%', width: '100%' }}
                         >
                         <Controls visible={false}/>
                     </Player>
