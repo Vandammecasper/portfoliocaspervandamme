@@ -6,7 +6,7 @@ import linkedin from "../assets/linkedin.png"
 
 export default () => {
   return (
-    <header className="hidden w-100% bg-slate-800 h-20 xl:grid grid-rows-2 grid-flow-col">
+    <header className="hidden w-100% bg-slate-800 h-20 lg:grid grid-rows-2 grid-flow-col">
       <div className='row-span-2 w-5/6 flex'>
         <Link to={'/'}>
           <div className=''>

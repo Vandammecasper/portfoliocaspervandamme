@@ -10,8 +10,8 @@ export default () => {
     return(
         <main className="h-screen">
             <Header/>
-            <div className="w-screen h-90% xl:grid xl:grid-rows-2 xl:grid-flow-col xl:gap-80 content-center xl:pt-28">
-                <div className="block xl:hidden w-80 pl-16 pt-6">
+            <div className="w-screen h-90% lg:grid lg:grid-rows-2 lg:grid-flow-col lg:gap-80 content-center lg:pt-28">
+                <div className="block lg:hidden w-80 pl-16 pt-6">
                     {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
                     <Player
                         autoplay
@@ -22,13 +22,13 @@ export default () => {
                         <Controls visible={false}/>
                     </Player>
                 </div>
-                <div className="row-span-2 xl:mt-12">
-                    <h2 className="text-3xl xl:text-4xl font-medium text-slate-300 pl-10 pt-2 xl:pl-20 xl:pt-0">Hello, I am</h2>
-                    <h1 className="text-5xl xl:text-7xl font-bold text-sky-500 pt-3 pl-10 xl:pl-20">Casper</h1>
-                    <h1 className="text-5xl xl:text-7xl font-bold text-sky-500 pl-10 xl:pl-20">Van Damme</h1>
-                    <h4 className="text-2xl xl:text-3xl font-medium text-slate-200 pt-3 pl-10 xl:pl-20">Student next web development at Howest</h4>
+                <div className="row-span-2 lg:mt-12">
+                    <h2 className="text-3xl lg:text-4xl font-medium text-slate-300 pl-10 pt-2 lg:pl-20 lg:pt-0">Hello, I am</h2>
+                    <h1 className="text-5xl lg:text-7xl font-bold text-sky-500 pt-3 pl-10 lg:pl-20">Casper</h1>
+                    <h1 className="text-5xl lg:text-7xl font-bold text-sky-500 pl-10 lg:pl-20">Van Damme</h1>
+                    <h4 className="text-2xl lg:text-3xl font-medium text-slate-200 pt-3 pl-10 lg:pl-20">Student next web development at Howest</h4>
                 </div>
-                <div className="hidden xl:block xl:row-span-2 xl:w-96">
+                <div className="hidden lg:block lg:row-span-2 lg:w-96">
                     {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
                     <Player
                         autoplay
