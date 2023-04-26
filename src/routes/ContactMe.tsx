@@ -49,23 +49,23 @@ export default () => {
                 </div>
                 <div className="row-span-2 xl:mt-10 xl:w-7/12">
                     <div className="flex">
-                        <h1 className="xl:text-5xl text-3xl 3xl:text-6xl font-semibold text-sky-500 pt-3 pl-6 xl:pl-20">Let's work together!</h1>
+                        <h1 className="xl:text-5xl text-3xl 3xl:text-6xl font-semibold text-sky-500 pt-3 3xl:pt-10 pl-6 xl:pl-20">Let's work together!</h1>
                         <a href="https://www.linkedin.com/in/casper-van-damme-18a98520b/">
                             <img className="block xl:hidden pl-3 h-11 pt-5" src={linkedin} alt="linkedin" />
                         </a>
                     </div>
                     <h2 className="xl:text-xl font-medium text-slate-700 pt-0 3xl:text-2xl xl:pt-3 pl-6 xl:pl-20">Web/app development & design</h2>
-                    <h3 className="text-slate-200 pt-3 pl-6 xl:pl-20 pr-5 3xl:text-lg">I love working on the front-end of websites and apps. besides development I also like working on the design!</h3>
-                    <h3 className="text-slate-200 pt-2 pl-6 xl:pl-20 pr-5 3xl:text-lg">Do you wish to get in touch with me? Feel free to send me an email!</h3>
+                    <h3 className="text-slate-200 pt-3 pl-6 xl:pl-20 pr-5 3xl:text-xl">I love working on the front-end of websites and apps. besides development I also like working on the design!</h3>
+                    <h3 className="text-slate-200 pt-2 pl-6 xl:pl-20 pr-5 3xl:text-xl">Do you wish to get in touch with me? Feel free to send me an email!</h3>
                     <a
-                        className="xl:ml-20 ml-6 mt-4 w-80 bg-slate-800 py-2 px-4 rounded relative grid justify-items-start"
+                        className="xl:ml-20 ml-6 mt-4 w-80 3xl:w-7/12 bg-slate-800 py-2 px-4 rounded relative grid justify-items-start"
                         onClick={() => copyToClipboard('casper.van.damme@outlook.com')}
                         onMouseEnter={() => setTooltipVisible(true)}
                         onMouseLeave={() => setTooltipVisible(false)}
                         href="mailto:caspervandamme03@gmail.com"
                     >
-                        <h4 className="text-slate-600">My e-mail address</h4>
-                        <h3 className="text-sky-500 font-bold text-lg">caspervandamme03@gmail.com</h3>
+                        <h4 className="text-slate-600 3xl:text-xl 3xl:mb-1">My e-mail address</h4>
+                        <h3 className="text-sky-500 font-bold text-lg 3xl:text-2xl 3xl:mb-1">caspervandamme03@gmail.com</h3>
                         <span
                         className={`opacity-0 bg-black text-white text-center text-xs rounded-lg py-2 px-3 absolute bottom-7 left-1/2 transform -translate-x-1/2 pointer-events-none z-50 transition-opacity duration-150 ${tooltipVisible ? 'opacity-100' : ''}`}
                         >
@@ -82,13 +82,24 @@ export default () => {
                         </span>
                     </a>
                 </div>
-                <div className="hidden xl:grid row-span-2 w-96">
+                <div className="hidden lg:block lg:row-span-2 lg:w-96 3xl:hidden">
                     {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
                     <Player
                         autoplay
                         loop
                         src={avatar_loop}
                         style={{ height: '100%', width: '100%' }}
+                        >
+                        <Controls visible={false}/>
+                    </Player>
+                </div>
+                <div className="hidden 3xl:block lg:row-span-2 lg:w-96 3xl:mr-16">
+                    {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
+                    <Player
+                        autoplay
+                        loop
+                        src={avatar_loop}
+                        style={{ height: '130%', width: '130%' }}
                         >
                         <Controls visible={false}/>
                     </Player>
