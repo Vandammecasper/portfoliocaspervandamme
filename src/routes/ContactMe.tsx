@@ -35,7 +35,7 @@ export default () => {
     return(
         <main className="h-screen overflow-hidden">
             <Header/>
-            <div className="w-screen h-100% xl:grid xl:grid-rows-2 xl:grid-flow-col xl:gap-96 items-center pt-6 xl:pt-28 overflow-auto">
+            <div className="w-screen h-100% xl:grid xl:grid-rows-2 xl:grid-flow-col xl:gap-24 content-center pt-6 xl:pt-28 overflow-auto">
                 <div className="block xl:hidden w-80 pl-16">
                     {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
                     <Player
@@ -47,7 +47,7 @@ export default () => {
                         <Controls visible={false}/>
                     </Player>
                 </div>
-                <div className="row-span-2">
+                <div className="row-span-2 xl:mt-10 xl:w-7/12">
                     <div className="flex">
                         <h1 className="xl:text-5xl text-3xl font-semibold text-sky-500 pt-3 pl-6 xl:pl-20">Let's work together!</h1>
                         <a href="https://www.linkedin.com/in/casper-van-damme-18a98520b/">
@@ -82,7 +82,7 @@ export default () => {
                         </span>
                     </a>
                 </div>
-                <div className="hidden xl:grid row-span-2 w-96 mr-32">
+                <div className="hidden xl:grid row-span-2 w-96">
                     {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
                     <Player
                         autoplay
