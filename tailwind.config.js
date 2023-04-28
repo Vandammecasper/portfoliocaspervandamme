@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       screens: {
         '3xl': '1920px',
+        maxlg: { max: '1023.5px' },
+      },
+      rotate: {
+        270: '270deg',
       },
     },
   },

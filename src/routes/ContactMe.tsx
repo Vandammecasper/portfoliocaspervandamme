@@ -35,30 +35,41 @@ export default () => {
     return(
         <main className="h-screen overflow-hidden">
             <Header/>
-            <div className="w-screen h-100% xl:grid xl:grid-rows-2 xl:grid-flow-col xl:gap-24 content-center pt-6 xl:pt-28 overflow-auto">
-                <div className="block xl:hidden w-80 pl-16">
+            <div className="w-screen h-100% grid lg:grid-rows-2 lg:grid-flow-col xl:gap-24 maxlg:justify-items-center pt-6 lg:pt-28 overflow-auto">
+                <div className="block md:hidden lg:hidden w-80 pl-16">
                     {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
                     <Player
                         autoplay
                         loop
                         src={avatar_loop}
-                        style={{ height: '240px', width: '240px' }}
+                        style={{ height: '100%', width: '100%' }}
                         >
                         <Controls visible={false}/>
                     </Player>
                 </div>
-                <div className="row-span-2 xl:mt-10 xl:w-7/12">
+                <div className="hidden md:block lg:hidden w-80 pl-16">
+                    {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
+                    <Player
+                        autoplay
+                        loop
+                        src={avatar_loop}
+                        style={{ height: '120%', width: '120%' }}
+                        >
+                        <Controls visible={false}/>
+                    </Player>
+                </div>
+                <div className="row-span-2 xl:mt-10 lg:w-7/12 maxlg:p-10 sm:p-10 xl:p-0">
                     <div className="flex">
-                        <h1 className="xl:text-5xl text-3xl 3xl:text-6xl font-semibold text-sky-500 pt-3 3xl:pt-10 pl-6 xl:pl-20">Let's work together!</h1>
+                        <h1 className="xl:text-5xl text-3xl 3xl:text-6xl font-semibold text-sky-500 3xl:pt-10 pl-6 lg:pl-20 xl:pt-0 lg:pt-8">Let's work together!</h1>
                         <a href="https://www.linkedin.com/in/casper-van-damme-18a98520b/">
-                            <img className="block xl:hidden pl-3 h-11 pt-5" src={linkedin} alt="linkedin" />
+                            <img className="block lg:hidden pl-3 h-9 pt-2" src={linkedin} alt="linkedin" />
                         </a>
                     </div>
-                    <h2 className="xl:text-xl font-medium text-slate-700 pt-0 3xl:text-2xl xl:pt-3 pl-6 xl:pl-20">Web/app development & design</h2>
-                    <h3 className="text-slate-200 pt-3 pl-6 xl:pl-20 pr-5 3xl:text-xl">I love working on the front-end of websites and apps. besides development I also like working on the design!</h3>
-                    <h3 className="text-slate-200 pt-2 pl-6 xl:pl-20 pr-5 3xl:text-xl">Do you wish to get in touch with me? Feel free to send me an email!</h3>
+                    <h2 className="xl:text-xl font-medium text-slate-700 pt-0 3xl:text-2xl xl:pt-3 pl-6 lg:pl-20">Web/app development & design</h2>
+                    <h3 className="text-slate-200 pt-3 pl-6 lg:pl-20 pr-5 3xl:text-xl">I love working on the front-end of websites and apps. besides development I also like working on the design!</h3>
+                    <h3 className="text-slate-200 pt-2 pl-6 lg:pl-20 pr-5 3xl:text-xl">Do you wish to get in touch with me? Feel free to send me an email!</h3>
                     <a
-                        className="xl:ml-20 ml-6 mt-4 w-80 3xl:w-7/12 bg-slate-800 py-2 px-4 rounded relative grid justify-items-start"
+                        className="xl:ml-20 lg:ml-20 ml-6 mt-4 w-80 3xl:w-7/12 bg-slate-800 py-2 px-4 rounded relative grid justify-items-start"
                         onClick={() => copyToClipboard('casper.van.damme@outlook.com')}
                         onMouseEnter={() => setTooltipVisible(true)}
                         onMouseLeave={() => setTooltipVisible(false)}
@@ -93,7 +104,7 @@ export default () => {
                         <Controls visible={false}/>
                     </Player>
                 </div>
-                <div className="hidden 3xl:block lg:row-span-2 lg:w-96 3xl:mr-16">
+                <div className="hidden 3xl:block lg:row-span-2 lg:w-96">
                     {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
                     <Player
                         autoplay
