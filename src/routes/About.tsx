@@ -15,7 +15,7 @@ export default () => {
     return(
         <main className="overflow-hidden">
             <Header/>
-            <div className="block xl:grid xl:grid-rows-2 xl:grid-flow-col pt-6 xl:pt-16 gap-24 overflow-auto">
+            <div className="block xl:grid xl:grid-rows-2 xl:grid-flow-col pt-6 pb-20 lg:pb-0 xl:pt-16 gap-24 overflow-auto">
                 <div className="xl:row-span-2 pl-2 xl:pl-12 xl:pb-20 xl:w-full">
                         <h1 className="text-4xl font-medium text-sky-500 pl-8 pt-4">aboutMe()</h1>
                         <h2 className="text-base xl:text-lg text-slate-200 pl-8 pt-2 xl:pt-5 w-11/12">I am a 20 year old student who loves technology, websites and applications. The drive to be able to create this myself is the main reason why I wanted to learn how to code. In September 2021, my mct journey started at the Howest in Kortrijk (Belgium), mct also known as multimedia and creative technologies.</h2>

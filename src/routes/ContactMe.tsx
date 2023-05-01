@@ -35,30 +35,30 @@ export default () => {
     return(
         <main className="h-screen overflow-hidden">
             <Header/>
-            <div className="w-screen h-100% grid lg:grid-rows-2 lg:grid-flow-col xl:gap-24 maxlg:justify-items-center pt-6 lg:pt-28 overflow-auto">
-                <div className="block md:hidden lg:hidden w-80 pl-16">
+            <div className="w-screen h-100% grid lg:grid-rows-2 lg:grid-flow-col xl:gap-24 maxlg:justify-items-center lg:pt-28 overflow-auto">
+                <div className="block md:hidden lg:hidden w-80">
                     {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
                     <Player
                         autoplay
                         loop
                         src={avatar_loop}
-                        style={{ height: '100%', width: '100%' }}
+                        style={{ height: '90%', width: '90%' }}
                         >
                         <Controls visible={false}/>
                     </Player>
                 </div>
-                <div className="hidden md:block lg:hidden w-80 pl-16">
+                <div className="hidden md:block lg:hidden w-80">
                     {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
                     <Player
                         autoplay
                         loop
                         src={avatar_loop}
-                        style={{ height: '120%', width: '120%' }}
+                        style={{ height: '110%', width: '110%' }}
                         >
                         <Controls visible={false}/>
                     </Player>
                 </div>
-                <div className="row-span-2 xl:mt-10 lg:w-7/12 maxlg:p-10 sm:p-10 xl:p-0">
+                <div className="row-span-2 xl:mt-10 lg:w-7/12 sm:p-10 xl:p-0">
                     <div className="flex">
                         <h1 className="xl:text-5xl text-3xl 3xl:text-6xl font-semibold text-sky-500 3xl:pt-10 pl-6 lg:pl-20 xl:pt-0 lg:pt-8">Let's work together!</h1>
                         <a href="https://www.linkedin.com/in/casper-van-damme-18a98520b/">

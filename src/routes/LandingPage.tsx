@@ -11,7 +11,7 @@ export default () => {
         <main className="h-screen">
             <Header/>
             <div className="w-screen h-90% grid lg:grid-rows-2 lg:grid-flow-col lg:gap-80 justify-items-center lg:pt-28">
-                <div className="block md:hidden lg:hidden w-80 pl-16 pt-6">
+                <div className="block md:hidden lg:hidden w-80 pt-6">
                     {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
                     <Player
                         autoplay
@@ -22,13 +22,13 @@ export default () => {
                         <Controls visible={false}/>
                     </Player>
                 </div>
-                <div className="hidden md:block lg:hidden w-80 pl-16 pt-6">
+                <div className="hidden md:block lg:hidden w-80 pt-6">
                     {/* <img className="rounded-full" src={avatar} alt="Avatar"/> */}
                     <Player
                         autoplay
                         loop
                         src={avatar_loop}
-                        style={{ height: '120%', width: '120%' }}
+                        style={{ height: '110%', width: '110%' }}
                         >
                         <Controls visible={false}/>
                     </Player>
