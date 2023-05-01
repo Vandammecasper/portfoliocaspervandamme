@@ -17,7 +17,7 @@ export default () => {
                         autoplay
                         loop
                         src={avatar_loop}
-                        style={{ height: '100%', width: '100%' }}
+                        style={{ height: '90%', width: '90%' }}
                         >
                         <Controls visible={false}/>
                     </Player>
