@@ -1,5 +1,4 @@
-import React, { useState } from "react"
-import avatar from "../assets/avatar.png"
+import { useState } from "react"
 import Header from "../components/Header"
 import BottomNav from "../components/BottomNav";
 import linkedin from "../assets/linkedin.png"

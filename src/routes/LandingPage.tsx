@@ -1,5 +1,3 @@
-import React from "react"
-import avatar from "../assets/avatar.png"
 import Header from "../components/Header"
 import BottomNav from "../components/BottomNav"
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
