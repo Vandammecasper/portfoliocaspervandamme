@@ -15,6 +15,7 @@ export default function Page () {
                                 <Skill title="React" years="+2 Year" />
                                 <Skill title="React native" years="+1 Year" />
                                 <Skill title="Next js" years="+1 Year" />
+                                <Skill title="Tailwind" years="+2 Year" />
                                 <Skill title="Html & css" years="+1 Year" />
                                 <Skill title="Javascript" years="+3 Year" />
                                 <Skill title="python" years="+2 Year" />
