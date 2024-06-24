@@ -11,19 +11,20 @@ export default function Page() {
     return(
         <main className="overflow-hidden px-8 lg:px-10 xl:px-20 pb-24 lg:pb-16">
                 <h1 className={`lg:text-5xl text-3xl font-medium text-sky-500 pt-6 lg:pt-12 xl:pt-16 transition-all duration-2500`}>projects()</h1>
-                <div className="grid lg:grid-cols-2 pt-8 lg:pt-16 gap-0 lg:gap-16">
-                    {/* <div className={`border-sky-500 border-4 rounded-xl mb-32 lg:mb-8 transition-all duration-2500`}>
+                    <div className={`border-sky-500 border-4 rounded-xl mx-40 mt-12 mb-32 lg:mb-8 transition-all duration-2500`}>
                         <Image className="px-8 pt-4" src={researchprojectpic} alt='cashcarpicture'/>
-                        <h2 className={`text-3xl text-sky-500 pt-4 px-8 transition-all duration-2500`}>Bachelor thesis (2024)</h2>
-                        <h4 className={`text-base text-slate-200 pt-2 px-8 transition-all duration-2500`}>My research project was the practical component of my bachelor's thesis. With this module, I created a proof of concept. The purpose of this project was to show that it is possible to answer the research question: "How can the visual interface of a website be dynamically adjusted based on users' emotional feedback?"</h4>
-                        <h4 className={`text-base text-slate-200 pt-2 px-8 transition-all duration-2500`}>I based my project on my portfolio, to which I added additional functionalities to enhance user experience. First and foremost, it was necessary to capture the emotional feedback of the user. I achieved this by using the Skybiometry API, which can determine a person's emotion from a photo. Furthermore, I developed four interfaces, each designed for a specific emotion: happy, neutral, sad, and angry. The API identifies the user's emotion, and the corresponding interface is then displayed.</h4>
+                        <h2 className={`text-3xl text-sky-500 pt-4 px-8 transition-all duration-2500`}>Bachelor's thesis (2024)</h2>
+                        <h4 className={`text-base text-slate-200 pt-2 px-8 transition-all duration-2500`}>The research question for my bachelor's thesis was: "How can the visual interface of a website be dynamically adjusted based on the emotional feedback of the user?". In preparation for the bachelor's thesis, we were tasked with developing a proof of concept related to the research question, this is the Research Project.</h4>
+                        <h4 className={`text-base text-slate-200 pt-2 px-8 transition-all duration-2500`}>I based my research project on my own portfolio, to which I added functionalities to enhance the user experience. First and foremost, it was necessary to capture the emotional state of the user. This was achieved by using the Skybiometry API, which can determine a person's emotional state by taking a picture of the user. Furthermore, four interfaces were developed, each designed for a specific emotion: happy, neutral, sad, and angry. The API identifies the user's emotion which results in displaying the corresponding interface.</h4>
+                        <h4 className={`text-base text-slate-200 pt-2 px-8 transition-all duration-2500`}>After completing the research project, the next step was the bachelor's thesis. This thesis consists of four important sections. First, the Research section, which consists of the theoretical research conducted during the research project and additional research specifically for the bachelor's thesis. Secondly, the Technical Research section, which outlines the various front-end development steps taken during the research project. Thirdly, the Reflection section, where both myself and external reviewers evaluate the research project and identify improvements to the process. Lastly, there is the Recommendations section, which provides concrete suggestions for the industry or future research.</h4>
                         <h3 className={`text-2xl text-sky-500 pt-4 px-8 transition-all duration-2500`}>Used skills</h3>
                         <div className="flex flex-wrap px-8 py-4">
                               <UsedSkills title="React" years="+2 Year" />
                               <UsedSkills title="Tailwind" years="+2 Year" />
                               <UsedSkills title="Github" years="+3 Year" />
                         </div>
-                    </div> */}
+                    </div>
+                <div className="grid lg:grid-cols-2 pt-8 lg:pt-10 gap-0 lg:gap-16">
                     <div className={`border-sky-500 border-4 rounded-xl mb-32 lg:mb-8 transition-all duration-2500`}>
                         <Image className="px-8 pt-4" src={hellopic} alt='cashcarpicture'/>
                         <h2 className={`text-3xl text-sky-500 pt-4 px-8 transition-all duration-2500`}>Project Hello (2024)</h2>
