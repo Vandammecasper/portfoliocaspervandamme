@@ -749,6 +749,9 @@ video {
 .justify-self-end {
   justify-self: end;
 }
+.justify-self-center {
+  justify-self: center;
+}
 .overflow-auto {
   overflow: auto;
 }
