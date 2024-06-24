@@ -606,10 +606,6 @@ video {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
-.mx-40 {
-  margin-left: 10rem;
-  margin-right: 10rem;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1094,6 +1090,11 @@ body {
 
   .lg\:row-span-2 {
     grid-row: span 2 / span 2;
+  }
+
+  .lg\:mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 
   .lg\:mb-8 {

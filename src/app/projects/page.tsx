@@ -11,7 +11,7 @@ export default function Page() {
     return(
         <main className="overflow-hidden px-8 lg:px-10 xl:px-20 pb-24 lg:pb-16">
                 <h1 className={`lg:text-5xl text-3xl font-medium text-sky-500 pt-6 lg:pt-12 xl:pt-16 transition-all duration-2500`}>projects()</h1>
-                    <div className={`border-sky-500 border-4 rounded-xl mx-40 mt-12 mb-32 lg:mb-8 transition-all duration-2500`}>
+                    <div className={`border-sky-500 border-4 rounded-xl lg:mx-40 mt-12 mb-32 lg:mb-8 transition-all duration-2500`}>
                         <Image className="px-8 pt-4" src={researchprojectpic} alt='cashcarpicture'/>
                         <h2 className={`text-3xl text-sky-500 pt-4 px-8 transition-all duration-2500`}>Bachelor's thesis (2024)</h2>
                         <h4 className={`text-base text-slate-200 pt-2 px-8 transition-all duration-2500`}>The research question for my bachelor's thesis was: "How can the visual interface of a website be dynamically adjusted based on the emotional feedback of the user?". In preparation for the bachelor's thesis, we were tasked with developing a proof of concept related to the research question, this is the Research Project.</h4>
