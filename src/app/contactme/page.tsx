@@ -19,8 +19,8 @@ export default function Page () {
                             <img className="block lg:hidden pr-6 pt-1 h-9" src={`/icons/linkedin.png`} alt="linkedin"/>
                         </a>
                     </div>
-                    <h2 className={`xl:text-xl font-medium text-slate-700 pt-0 3xl:text-2xl xl:pt-3 pl-6 lg:pl-20  transition-all duration-2500`}>Front-end development</h2>
-                    <h3 className={`text-slate-200 pt-3 pl-6 lg:pl-20 pr-5 3xl:text-xl  transition-all duration-2500`}>I love working on the front-end of websites and apps. besides development I also like working on the design!</h3>
+                    <h2 className={`xl:text-xl font-medium text-slate-700 pt-0 3xl:text-2xl xl:pt-3 pl-6 lg:pl-20  transition-all duration-2500`}>Front-end- or full-stack development</h2>
+                    <h3 className={`text-slate-200 pt-3 pl-6 lg:pl-20 pr-5 3xl:text-xl  transition-all duration-2500`}>I love working on websites and apps. besides development I also like working on the design!</h3>
                     <h3 className={`text-slate-200 pt-2 pl-6 lg:pl-20 pr-5 3xl:text-xl  transition-all duration-2500`}>Do you wish to get in touch with me? Feel free to send me an email!</h3>
                     <Email/>
                 </div>
