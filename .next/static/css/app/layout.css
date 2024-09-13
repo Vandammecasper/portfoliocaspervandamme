@@ -1224,6 +1224,10 @@ body {
     margin-top: 2.5rem;
   }
 
+  .xl\:ml-0 {
+    margin-left: 0px;
+  }
+
   .xl\:grid {
     display: grid;
   }

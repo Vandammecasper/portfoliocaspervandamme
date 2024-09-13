@@ -12,7 +12,7 @@ export default function Page () {
                 </div>
                 <div className='mb-32 sm:mb-0'>
                     <h1 className="text-4xl font-medium text-sky-500 pl-8 xl:pt-0 pt-8">skills()</h1>
-                    <div className="w-5/6 grid col-auto ml-8 sm:ml-0">
+                    <div className="w-5/6 grid col-auto ml-8 xl:ml-0">
                         <div className='flex flex-wrap'>
                             <Skill title="React" years="+2 Year" />
                             <Skill title="React native" years="+1 Year" />
