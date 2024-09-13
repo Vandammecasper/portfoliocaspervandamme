@@ -17,7 +17,7 @@ export default async function Page () {
                     <h1 className="text-5xl md:text-6xl 3xl:text-8xl font-bold text-sky-500 pt-3 pl-10 lg:pl-20 3xl:pl-0">Casper</h1>
                     <h1 className="text-5xl md:text-6xl 3xl:text-8xl font-bold text-sky-500 pl-10 lg:pl-20 3xl:pl-0">Van Damme</h1>
                     <h4 className="text-2xl md:text-3xl 3xl:text-4xl font-medium text-slate-200 pt-3 pl-10 lg:pl-20 3xl:pl-0">
-                      Student next web development at Howest
+                      Next web developer
                     </h4>
                 </div>
                 <div className="hidden lg:block lg:row-span-2 lg:w-96 3xl:hidden">
