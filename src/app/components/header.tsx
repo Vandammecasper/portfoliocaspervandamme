@@ -1,29 +1,48 @@
 'use client'
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default () => {
 
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  }
+
+  const handleRouting = (route: string) => () => {
+    setMenuOpen(false);
+    window.location.href = `/${route}`;
+  }
+
   return (
-    <header className="hidden w-100% bg-slate-800 h-24 lg:grid grid-rows-2 grid-flow-col">
-      <div className='row-span-2 w-5/6 flex'>
-        <Link href={'/'}>
-          <div className=''>
-            <h1 className='text-slate-200 text-2xl pt-8 pl-20 font-bold'>Casper Van Damme</h1>
-          </div>
-        </Link>
-        <Link href="https://www.linkedin.com/in/casper-van-damme-18a98520b/">
-          <img className="pt-9 pl-4" src="/icons/linkedin.png" alt="linkedin icon"/>
-        </Link>
-      </div>
-        <div className='row-span-2 justify-self-end pt-2'>
-          <div className='grid grid-rows-3 grid-flow-col justify-items-end pr-20 gap-16'>
-            <Link className="row-span-3 text-slate-200 text-xl pt-6 font-semibold h-20" href={'/about'}>About</Link>
-            <Link className="row-span-3 text-slate-200 text-xl pt-6 font-semibold h-20" href={'/projects'}>Projects</Link>
-            <div className='border-sky-400 border-2 mt-4 p-2 rounded-xl'>
-              <Link className="row-span-3 text-slate-200 text-xl font-semibold pt-6" href={'/contactme'}>Contact Me</Link>
-            </div>
+    <header>
+      <div className="w-screen bg-slate-800 h-24 flex justify-between items-center px-10 sm:px-14 lg:px-20">
+        <div className='row-span-2 flex'>
+          <Link href={'/'}>
+              <h1 className='text-slate-200 text-xl lg:text-2xl font-bold'>Casper Van Damme</h1>
+          </Link>
+          <Link className="hidden md:block" href="https://www.linkedin.com/in/casper-van-damme-18a98520b/">
+            <img className="pl-4" src="/icons/linkedin.png" alt="linkedin icon"/>
+          </Link>
+        </div>
+        <div className='hidden md:flex items-center gap-8 lg:gap-16'>
+          <Link className="row-span-3 text-slate-200 text-xl font-semibold" href={'/about'}>About</Link>
+          <Link className="row-span-3 text-slate-200 text-xl font-semibold" href={'/projects'}>Projects</Link>
+          <div className='border-sky-400 border-2 p-2 rounded-xl'>
+            <Link className="row-span-3 text-slate-200 text-xl font-semibold" href={'/contactme'}>Contact Me</Link>
           </div>
         </div>
+        <img src="/icons/menu.svg" alt="" onClick={toggleMenu} className="h-8 md:hidden"/>
+      </div>
+      <div className={`overflow-hidden h-screen w-screen bg-black fixed z-20 flex flex-col -mt-24 gap-16 items-center justify-center bg-primary transition ease-in-out delay-100 duration-700 ${menuOpen ? '-translate-y-0' : '-translate-y-full'}`}>
+        <img onClick={toggleMenu} src="/icons/close.svg" alt="" className="absolute top-8 right-8 sm:right-14 h-12"/>
+        <button className="text-slate-200 text-4xl font-bold" onClick={handleRouting('')}>Home</button>
+        <button className="text-slate-200 text-4xl font-bold" onClick={handleRouting('about')}>About</button>
+        <button className="text-slate-200 text-4xl font-bold" onClick={handleRouting('projects')}>Projects</button>
+        <button className="text-slate-200 text-4xl font-bold" onClick={handleRouting('contactme')}>Contact Me</button>
+      </div>
     </header>
   );
 };

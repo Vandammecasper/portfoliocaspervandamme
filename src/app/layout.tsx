@@ -2,7 +2,6 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Header from './components/header'
-import BottomNav from './components/bottomnav'
 
 // require('dotenv').config();
 
@@ -23,7 +22,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header/>
         {children}
-        <BottomNav/>
         </body>
     </html>
   )

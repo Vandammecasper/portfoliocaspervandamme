@@ -5,7 +5,7 @@ import Logo from './components/logo'
 export default async function Page () {
     return(
         <main className="">
-            <div className="w-screen h-90% grid lg:grid-rows-2 lg:grid-flow-col lg:gap-80 justify-items-center lg:pt-28">
+            <div className="w-screen h-screen sm:h-90% flex flex-col items-center justify-center sm:grid lg:grid-rows-2 lg:grid-flow-col lg:gap-80 sm:justify-items-center lg:pt-28">
                 <div className="block md:hidden w-80 pt-6">
                 <Logo/>
                 </div>
