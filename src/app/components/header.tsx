@@ -1,11 +1,9 @@
 'use client'
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default () => {
-
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showHeader, setShowHeader] = useState(true);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -38,10 +36,10 @@ export default () => {
       </div>
       <div className={`overflow-hidden h-screen w-screen bg-black fixed z-20 flex flex-col -mt-24 gap-16 items-center justify-center bg-primary transition ease-in-out delay-100 duration-700 ${menuOpen ? '-translate-y-0' : '-translate-y-full'}`}>
         <img onClick={toggleMenu} src="/icons/close.svg" alt="" className="absolute top-8 right-8 sm:right-14 h-12"/>
-        <button className="text-slate-200 text-4xl font-bold" onClick={handleRouting('')}>Home</button>
-        <button className="text-slate-200 text-4xl font-bold" onClick={handleRouting('about')}>About</button>
-        <button className="text-slate-200 text-4xl font-bold" onClick={handleRouting('projects')}>Projects</button>
-        <button className="text-slate-200 text-4xl font-bold" onClick={handleRouting('contactme')}>Contact Me</button>
+        <button className={`text-4xl font-bold ${window.location.pathname === '/' ? "text-sky-500" : "text-slate-200"}`} onClick={handleRouting('')}>Home</button>
+        <button className={`text-4xl font-bold ${window.location.pathname === '/about' ? "text-sky-500" : "text-slate-200"}`} onClick={handleRouting('about')}>About</button>
+        <button className={`text-4xl font-bold ${window.location.pathname === '/projects' ? "text-sky-500" : "text-slate-200"}`} onClick={handleRouting('projects')}>Projects</button>
+        <button className={`text-4xl font-bold ${window.location.pathname === '/contactme' ? "text-sky-500" : "text-slate-200"}`} onClick={handleRouting('contactme')}>Contact Me</button>
       </div>
     </header>
   );
