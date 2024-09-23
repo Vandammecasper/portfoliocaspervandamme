@@ -17,7 +17,7 @@ export default () => {
   return (
     <header>
       <div className="w-screen bg-slate-800 h-24 flex justify-between items-center px-10 sm:px-14 lg:px-20">
-        <div className='row-span-2 flex'>
+        <div className='row-span-2 flex items-center'>
           <Link href={'/'}>
               <h1 className='text-slate-200 text-xl lg:text-2xl font-bold'>Casper Van Damme</h1>
           </Link>
