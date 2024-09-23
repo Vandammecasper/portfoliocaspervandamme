@@ -9,11 +9,6 @@ export default () => {
     setMenuOpen(!menuOpen);
   }
 
-  const handleRouting = (route: string) => () => {
-    setMenuOpen(false);
-    window.location.href = `/${route}`;
-  }
-
   return (
     <header>
       <div className="w-screen bg-slate-800 h-24 flex justify-between items-center px-10 sm:px-14 lg:px-20">
@@ -36,10 +31,10 @@ export default () => {
       </div>
       <div className={`overflow-hidden h-screen w-screen bg-black fixed z-20 flex flex-col -mt-24 gap-16 items-center justify-center bg-primary transition ease-in-out delay-100 duration-700 ${menuOpen ? '-translate-y-0' : '-translate-y-full'}`}>
         <img onClick={toggleMenu} src="/icons/close.svg" alt="" className="absolute top-8 right-8 sm:right-14 h-12"/>
-        <button className={`text-4xl font-bold ${window.location.pathname === '/' ? "text-sky-500" : "text-slate-200"}`} onClick={handleRouting('')}>Home</button>
-        <button className={`text-4xl font-bold ${window.location.pathname === '/about' ? "text-sky-500" : "text-slate-200"}`} onClick={handleRouting('about')}>About</button>
-        <button className={`text-4xl font-bold ${window.location.pathname === '/projects' ? "text-sky-500" : "text-slate-200"}`} onClick={handleRouting('projects')}>Projects</button>
-        <button className={`text-4xl font-bold ${window.location.pathname === '/contactme' ? "text-sky-500" : "text-slate-200"}`} onClick={handleRouting('contactme')}>Contact Me</button>
+        <Link className={`text-4xl font-bold ${window.location.pathname === '/' ? "text-sky-500" : "text-slate-200"}`} href={'/'}>Home</Link>
+        <Link className={`text-4xl font-bold ${window.location.pathname === '/about' ? "text-sky-500" : "text-slate-200"}`} href={'/about'}>About</Link>
+        <Link className={`text-4xl font-bold ${window.location.pathname === '/projects' ? "text-sky-500" : "text-slate-200"}`} href={'/projects'}>Projects</Link>
+        <Link className={`text-4xl font-bold ${window.location.pathname === '/contactme' ? "text-sky-500" : "text-slate-200"}`} href={'/contactme'}>Contact Me</Link>
       </div>
     </header>
   );
