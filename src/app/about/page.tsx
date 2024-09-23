@@ -2,7 +2,7 @@ import Skill from '../components/Skill';
  
 export default function Page () {
     return(
-        <main className="overflow-hidden">
+        <main className="overflow-hidden bg-slate-900">
             <div className="xl:grid xl:grid-rows-2 xl:grid-flow-col pt-6 lg:pt-12 xl:pt-16 gap-24 overflow-hidden w-full sm:h-screen">
                 <div className="xl:row-span-2 pl-2 xl:pl-12 xl:pb-20 xl:w-full">
                         <h1 className="text-4xl font-medium text-sky-500 pl-8 pt-4">aboutMe()</h1>

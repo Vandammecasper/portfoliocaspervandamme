@@ -4,7 +4,7 @@ import Email from "../components/email";
 
 export default function Page () {
     return(
-        <main className="">
+        <main className="bg-slate-900 h-screen">
             <div className="w-screen h-90% grid lg:grid-rows-2 lg:grid-flow-col lg:gap-40 lg:pt-28 mb-24 lg:mb-0">
                 <div className="block md:hidden lg:hidden w-80 justify-self-center">
                     <Logo/>
