@@ -621,6 +621,9 @@ video {
 .-mt-5 {
   margin-top: -1.25rem;
 }
+.-ml-4 {
+  margin-left: -1rem;
+}
 .block {
   display: block;
 }
@@ -1060,6 +1063,10 @@ body {
 
   .sm\:mt-16 {
     margin-top: 4rem;
+  }
+
+  .sm\:ml-0 {
+    margin-left: 0px;
   }
 
   .sm\:block {

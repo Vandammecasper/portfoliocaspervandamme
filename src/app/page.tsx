@@ -23,9 +23,9 @@ export default async function Page () {
 
   return (
     <main className="h-screen w-screen bg-slate-900 overflow-x-scroll flex items-center">
-      <div className="h-full bg-slate-900 flex items-center sm:pl-4 lg:pl-12 xl:pl-48 gap-0 sm:gap-8 lg:gap-12">
-        <div className="w-72 sm:w-97 md:w-98 lg:w-100">
-          <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl font-jost font-black text-sky-500 pt-3 pl-10 lg:pl-20 3xl:pl-0">
+      <div className="h-full bg-slate-900 flex items-center -ml-4 sm:ml-0 sm:pl-4 lg:pl-12 xl:pl-48 gap-4 sm:gap-8 lg:gap-12">
+        <div className="w-80 sm:w-97 md:w-98 lg:w-100">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl font-jost font-black text-sky-500 pt-3 pl-10 lg:pl-20 3xl:pl-0">
             CASPER VAN DAMME
           </h1>
           <h4 className="sm:text-xl md:text-2xl lg:text-3xl 3xl:text-4xl font-inter font-light text-slate-200 pt-3 pl-10 lg:pl-20 3xl:pl-0">
