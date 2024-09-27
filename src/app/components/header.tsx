@@ -23,7 +23,7 @@ export default () => {
 
   return (
     <header>
-      <div className="w-screen bg-slate-800 h-24 flex justify-between items-center px-10 sm:px-14 lg:px-20">
+      <div className="w-screen bg-slate-800 h-24 flex justify-between items-center px-10 sm:px-14 lg:px-20 fixed z-20">
         <div className="row-span-2 flex items-center">
           <Link href="/">
             <h1 className="text-slate-200 text-xl lg:text-2xl font-bold">Casper Van Damme</h1>
@@ -41,7 +41,7 @@ export default () => {
         </div>
         <img src="/icons/menu.svg" alt="menu" onClick={toggleMenu} className="h-8 md:hidden" />
       </div>
-      <div className={`overflow-hidden h-screen w-screen bg-black fixed z-20 flex flex-col -mt-24 gap-16 items-center justify-center bg-primary transition ease-in-out delay-100 duration-700 ${menuOpen ? '-translate-y-0' : '-translate-y-full'}`}>
+      <div className={`overflow-hidden h-screen w-screen bg-black fixed z-20 flex flex-col gap-16 items-center justify-center bg-primary transition ease-in-out delay-100 duration-700 ${menuOpen ? '-translate-y-0' : '-translate-y-full'}`}>
         <img onClick={toggleMenu} src="/icons/close.svg" alt="close" className="absolute top-8 right-8 sm:right-14 h-12" />
         {isClient && (
           <>

@@ -2,8 +2,8 @@ import Skill from '../components/Skill';
  
 export default function Page () {
     return(
-        <main className="overflow-hidden bg-slate-900">
-            <div className="xl:grid xl:grid-rows-2 xl:grid-flow-col pt-6 lg:pt-12 xl:pt-16 gap-24 overflow-hidden w-full sm:h-screen">
+        <main className="overflow-hidden bg-slate-900 t">
+            <div className="xl:grid xl:grid-rows-2 xl:grid-flow-col pt-6 lg:pt-12 xl:pt-16 gap-24 overflow-hidden w-full sm:h-screen mt-24">
                 <div className="xl:row-span-2 pl-2 xl:pl-12 xl:pb-20 xl:w-full">
                         <h1 className="text-4xl font-medium text-sky-500 pl-8 pt-4">aboutMe()</h1>
                         <h2 className="text-base xl:text-lg text-slate-200 pl-8 pt-2 xl:pt-5">I am a 21 year bachelor graduate who loves technology, websites and applications. The drive to be able to create this myself is the main reason why I wanted to learn how to code. In September 2021, my mct journey started at the Howest in Kortrijk (Belgium), mct also known as multimedia and creative technologies.</h2>
