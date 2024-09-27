@@ -63,7 +63,7 @@ export default async function Page () {
           </button>
         </div>
       </div>
-      <div className='absolute bottom-8 right-8 flex gap-2 md:gap-4 items-center'>
+      <div className='absolute bottom-4 lg:bottom-8 right-8 flex gap-2 md:gap-4 items-center'>
         <p className="text-xs sm:text-sm md:text-lg lg:text-xl font-inter font-light text-slate-200">
           SCROLL TO GO BACK IN TIME
         </p>

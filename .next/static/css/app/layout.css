@@ -560,6 +560,9 @@ video {
 .top-full {
   top: 100%;
 }
+.bottom-4 {
+  bottom: 1rem;
+}
 .z-20 {
   z-index: 20;
 }
@@ -1043,6 +1046,10 @@ body {
     right: 3.5rem;
   }
 
+  .sm\:bottom-8 {
+    bottom: 2rem;
+  }
+
   .sm\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1248,6 +1255,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+
+  .lg\:bottom-8 {
+    bottom: 2rem;
+  }
 
   .lg\:mx-40 {
     margin-left: 10rem;
