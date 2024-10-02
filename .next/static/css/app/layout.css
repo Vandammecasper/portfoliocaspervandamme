@@ -1471,6 +1471,10 @@ body {
     margin-top: 6.75rem;
   }
 
+  .lg\:-mt-13 {
+    margin-top: -3.15rem;
+  }
+
   .lg\:h-10 {
     height: 2.5rem;
   }
