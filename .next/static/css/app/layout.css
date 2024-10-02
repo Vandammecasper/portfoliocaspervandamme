@@ -660,6 +660,9 @@ video {
 .mr-16 {
   margin-right: 4rem;
 }
+.-mt-9 {
+  margin-top: -2.25rem;
+}
 .block {
   display: block;
 }
