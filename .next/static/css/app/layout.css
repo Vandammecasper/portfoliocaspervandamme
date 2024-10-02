@@ -1475,6 +1475,14 @@ body {
     margin-top: -3.15rem;
   }
 
+  .lg\:-mt-11 {
+    margin-top: -2.75rem;
+  }
+
+  .lg\:-mt-9 {
+    margin-top: -2.25rem;
+  }
+
   .lg\:h-10 {
     height: 2.5rem;
   }
