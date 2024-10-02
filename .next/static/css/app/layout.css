@@ -1303,6 +1303,10 @@ body {
     margin-top: 6.25rem;
   }
 
+  .md\:-mt-13 {
+    margin-top: -3.15rem;
+  }
+
   .md\:block {
     display: block;
   }
