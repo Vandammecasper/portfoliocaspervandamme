@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 
 
 export default function Page () {
+  const [pol, setPol] = useState(false)
   const [grad, setGrad] = useState(false);
   const [howest, setHowest] = useState(false);
   const [cashCar, setCashCar] = useState(false);
@@ -42,10 +43,19 @@ export default function Page () {
         </div>
         <div className="-mt-6 md:-mt-7 lg:-mt-8 bg-sky-500 h-4 sm:h-6 md:h-8 lg:h-10 flex items-center pl-80 sm:pl-96 md:pl-100 2xl:pl-110 gap-96 sm:gap-100 pr-96">
           <div className='flex flex-col items-center'>
+            <button onClick={() => setPol(!pol)} className={`mt-18 sm:mt-22 md:mt-25 lg:mt-27 bg-slate-900 border-sky-500 rounded-full w-8 sm:w-12 md:w-16 lg:w-20 h-8 sm:h-12 md:h-16 lg:h-20 flex flex-col items-center transition ease-in-out delay-100 duration-300 ${pol ? 'scale-1000 sm:scale-800 md:scale-500 border-1' : 'scale-100 border-4'}`}>
+              <h4 className={`text-sky-500 text-center font-jost font-black text-sm lg:text-base transition ease-in-out delay-150 duration-300 -mt-1.5 sm:mt-0 mb-0.5 sm:mb-0 ${pol ? 'opacity-100 scale-15 sm:scale-25 md:scale-30' : 'opacity-0'}`}>POLYSENSE</h4>
+              <p className={`text-slate-200 text-center font-inter text-xxs lg:text-xs transition ease-in-out delay-150 duration-300 whitespace-nowrap -mt-4 sm:-mt-3 md:-mt-2.5 lg:-mt-3 mb-1.5 sm:mb-0.5 lg:mb-0.5 ${pol ? 'opacity-100 scale-15 sm:scale-25 md:scale-30' : 'opacity-0'}`}>OCT 2024</p>
+              <p className={`text-slate-200 text-center font-inter text-xxs lg:text-xs w-44 lg:w-56 transition ease-in-out delay-150 duration-300 -mt-16 sm:-mt-14 md:-mt-12 lg:-mt-14 ${pol ? 'opacity-100 scale-15 sm:scale-20 md:scale-30' : 'opacity-0'}`}>On Monday, October 21st, I began my professional journey at Polysense, a young and innovative startup that leverages AI to help manufacturing companies optimize their processes for greater efficiency and sustainability. As a full-stack developer at Polysense, I am responsible for developing and maintaining the UI. </p>
+            </button>
+            <h3 className={`text-sky-500 text-center font-jost font-black sm:text-xl md:text-2xl lg:text-4xl mt-6 sm:mt-8 whitespace-nowrap transition ease-in-out delay-100 duration-300 ${pol ? 'opacity-0' : 'opacity-100'}`}>POLYSENSE</h3>
+            <p className={`text-slate-200 text-center font-inter text-xs sm:text-md md:text-lg lg:text-xl mt-2 whitespace-nowrap transition ease-in-out delay-100 duration-300 ${pol ? 'opacity-0' : 'opacity-100'}`}>OCT 2024</p>
+          </div>
+          <div className='flex flex-col items-center'>
             <button onClick={() => setGrad(!grad)} className={`mt-18 sm:mt-22 md:mt-25 lg:mt-27 bg-slate-900 border-sky-500 rounded-full w-8 sm:w-12 md:w-16 lg:w-20 h-8 sm:h-12 md:h-16 lg:h-20 flex flex-col items-center transition ease-in-out delay-100 duration-300 ${grad ? 'scale-1000 sm:scale-800 md:scale-500 border-1' : 'scale-100 border-4'}`}>
               <h4 className={`text-sky-500 text-center font-jost font-black text-sm lg:text-base transition ease-in-out delay-150 duration-300 -mt-1.5 sm:mt-0 mb-0.5 sm:mb-0 ${grad ? 'opacity-100 scale-15 sm:scale-25 md:scale-30' : 'opacity-0'}`}>GRADUATION</h4>
-              <p className={`text-slate-200 text-center font-inter text-xxs lg:text-xs transition ease-in-out delay-150 duration-300 whitespace-nowrap -mt-4 sm:-mt-3 md:-mt-2.5 lg:-mt-3 mb-1.5 sm:mb-0.5 lg:mb-0 ${grad ? 'opacity-100 scale-15 sm:scale-25 md:scale-30' : 'opacity-0'}`}>SEP 2024</p>
-              <p className={`text-slate-200 text-center font-inter text-xxs lg:text-xs w-44 lg:w-56 transition ease-in-out delay-150 duration-300 -mt-13.5 sm:-mt-13 md:-mt-11 lg:-mt-12 ${grad ? 'opacity-100 scale-15 sm:scale-20 md:scale-30' : 'opacity-0'}`}>After three years of hard work, I am proud to have graduated from Howest. This achievement marks an important milestone, and I am excited to explore new opportunities. I am currently seeking my first job to apply my skills and knowledge while starting the next chapter of my career.</p>
+              <p className={`text-slate-200 text-center font-inter text-xxs lg:text-xs transition ease-in-out delay-150 duration-300 whitespace-nowrap -mt-4 sm:-mt-3 md:-mt-2.5 lg:-mt-3 mb-1 sm:mb-0.5 lg:mb-0 ${grad ? 'opacity-100 scale-15 sm:scale-25 md:scale-30' : 'opacity-0'}`}>SEP 2024</p>
+              <p className={`text-slate-200 text-center font-inter text-xxs lg:text-xs w-44 lg:w-56 transition ease-in-out delay-150 duration-300 -mt-14 sm:-mt-13 md:-mt-11 lg:-mt-12 ${grad ? 'opacity-100 scale-15 sm:scale-20 md:scale-30' : 'opacity-0'}`}>After three years of hard work, I am proud to have graduated from Howest. This achievement marks an important milestone, and I am excited to explore new opportunities. I am currently seeking my first job to apply my skills and knowledge while starting the next chapter of my career.</p>
             </button>
             <h3 className={`text-sky-500 text-center font-jost font-black sm:text-xl md:text-2xl lg:text-4xl mt-6 sm:mt-8 whitespace-nowrap transition ease-in-out delay-100 duration-300 ${grad ? 'opacity-0' : 'opacity-100'}`}>GRADUATION</h3>
             <p className={`text-slate-200 text-center font-inter text-xs sm:text-md md:text-lg lg:text-xl mt-2 whitespace-nowrap transition ease-in-out delay-100 duration-300 ${grad ? 'opacity-0' : 'opacity-100'}`}>SEP 2024</p>
